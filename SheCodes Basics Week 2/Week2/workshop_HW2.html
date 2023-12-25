@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <style>
+        .emoji {
+            text-align: center;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        h1 {
+            color: #1a64d6;
+        }
+
+        .container {
+            text-align: center;
+
+        }
+
+        .container:hover {
+            background-color: beige;
+            margin: 0 auto;
+            width: 400px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .city {
+            display: block;
+            margin: 10px auto;
+            background-color: #1a64d6;
+            color: white;
+            padding: 18px 25px;
+            border-radius: 30px;
+            border: 1px solid black;
+        }
+
+        .city:hover {
+            background-color: white;
+            color: #1a64d6;
+            transition: all 200ms ease-in-out;
+        }
+
+        .foot {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="emoji">⛅</div>
+    <h1>Currently 21° in Tokyo</h1>
+    <h2>13°/<span class="bold">23°</span></h2>
+
+    <div class="container">
+        <!-- <div class="Container1">  -->
+        <span class="bold">🌧️Tomorrow</span>
+        <!-- </div> -->
+        <!-- <div class="container2"> -->
+        <p>10°/<span class="bold">22°</span></p>
+        <!-- </div> -->
+    </div>
+
+    <div class="container">
+        <!-- <div class="Container1"> -->
+        <span class="bold">🌧️Saturday</span>
+        <!-- </div> -->
+        <!-- <div class="container2"> -->
+        <p>15°/<span class="bold">27°</span></p>
+        <!-- </div> -->
+    </div>
+
+    <div class="container">
+        <!-- <div class="Container1"> -->
+        <span class="bold">☀️Sunday</span>
+        <!-- </div> -->
+        <!-- <div class="container2"> -->
+        <p>25°/<span class="bold">28°</span></p>
+        <!-- </div> -->
+    </div>
+    <div>
+        <button class="city"> Change City</button>
+    </div>
+
+    <div class="foot">
+        <p>Coded By Saisha Budhathoki</p>
+
+    </div>
+    <script>
+
+       function apply() {
+            let emoji = document.querySelector(".emoji");
+            let h1 = document.querySelector("h1");
+            let country = prompt("What is your Country?");
+            let temp = prompt("What's the current Temperature in your Country");
+
+            if (temp >= 8) {
+                emoji.innerHTML = "☺️";
+                h1.innerHTML = `Currently ${temp}° in ${country}`;
+            } else {
+                emoji.innerHTML = "☹️";
+                h1.innerHTML = `Currently ${temp}° in ${country}`;
+            }
+        }
+
+        let applyButton = document.querySelector("button");
+        applyButton.addEventListener("click", apply);
+        
+    </script>
+</body>
+
+</html>
