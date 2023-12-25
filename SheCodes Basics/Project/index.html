@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project First</title>
+<style>
+    *{
+        font-family: cursive;
+    }
+    .container{
+        display:block;
+        margin: 0 auto; 
+        height: 165vh;
+        width: 50vw;
+        background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+        /* background-color: white; */
+        border-radius: 33px;
+    }
+    h2{
+        text-align: center;
+        padding-top: 33px;
+        color:white;
+    }
+    h1{
+        border: 3px solid white;
+        text-align: center;
+        color:white;
+        margin: 0 25px;
+        padding: 20px;
+        background-color: transparent;
+    }
+    .image{
+        margin: 0 auto;
+
+    }
+    .img{
+        display: block;
+        margin: 0 auto;
+        width: 30vw;
+        
+    }
+    .desc{
+        color:white;
+        text-align: center;
+        padding:0  22px;
+        font-weight: bold;
+        font-family: cursive;
+        line-height: 30px;
+        font-size: large;
+    }
+    .link{
+        color: white;
+        padding: 22px;
+    }
+    button{
+        display: block;
+        margin: 20px auto;
+        background-color: white;
+        text-align: center;
+        color: black;
+        font-weight: bolder;
+        padding: 20px;
+        font-size: larger;
+        cursor: pointer;
+        box-shadow: 7px 8px 3px  rgba(0, 0, 255, .2);
+        
+    }
+    .link{
+        font-size: small;
+        font-weight: lighter;
+    }
+    button:hover{
+        transition: all 1s ease-in-out;
+        background-color: lightcyan;
+    }
+    .spans{
+        color:blue
+    }
+
+
+</style>
+
+</head>
+<body>
+    
+
+    <div class="container">
+            <h2>GBS</h2>
+            <h1>Guillian Barre Syndrome</h1>
+            <hr>
+            <div class="image">
+                <img class="img" src="https://th.bing.com/th/id/OIP.HuvYzFMiuORGe3g817bG_QHaEK?rs=1&pid=ImgDetMain">
+            </div>
+            <hr>
+            <div class="desc">
+              <p> <em> Guillain-Barré syndrome (GBS)</em> is a rare neurological disorder where the immune system mistakenly attacks peripheral
+                nerves, leading to muscle weakness and paralysis. It often starts with tingling and weakness in the legs and can
+                progress rapidly. GBS is triggered by infections, and the exact cause involves an autoimmune response. Treatment
+                includes supportive measures such as intravenous immunoglobulin (IVIG) and plasma exchange. While it can be serious,
+                many individuals recover with medical care, especially when diagnosed and treated early.</p>           
+            </div>
+            <div>
+                <a class="link" target="_blank" href="https://en.wikipedia.org/wiki/Guillain%E2%80%93Barr%C3%A9_syndrome"><strong>Link on wikipedia</strong></a>
+            </div>
+            
+            <button>Click IF you're a <span class="spans">GBS-Patient</span></button>
+            
+        
+        
+    </div>
+
+
+
+
+
+    <script>
+       function apply() {
+            let name = prompt("What is your Name");
+            let age=prompt("What is your age?");
+            if (age>=10 && age<=28){
+                alert(`Hi!, Welcome To Community & TeenYouth Group`);
+            }
+            else{
+                alert(`Hi!, Welcome To Community`);
+
+            }
+
+            alert(`Thanks ${name}!, We will reach out to you soon. Please TakeCare❤️`);
+        }
+
+        let clickButton = document.querySelector("button");
+        clickButton.addEventListener("click", apply);
+
+
+         
+
+    </script>
+</body>
+</html>
