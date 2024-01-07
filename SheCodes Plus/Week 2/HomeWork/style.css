@@ -1,0 +1,62 @@
+.container{
+    display: block;
+    /* justify-content: center; */
+    background-color: whitesmoke;
+      border-radius: 22px;
+    margin: 100px 96px;
+    
+
+}
+.header{
+    display: flex;
+    justify-content: flex-start;
+    width:100%
+    
+}
+h1{
+    font-weight: bolder;
+}
+.form-1{
+    padding: 22px;
+    display: flex;
+    justify-content: center;
+}
+.in-1, .in-2{
+    padding: 22px;
+    border: none;
+}
+.in-1{
+    padding-left: 567px;
+
+}
+.in-2{
+    background: blueviolet;
+    color: white;
+}
+
+.current-weather{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 88px;
+}
+.temp{
+    font-size: 44px;
+    font-weight: bold;
+}
+.c{
+    position: relative;
+    top:-22px;
+    font-size: 22px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 33px;
+}
+
+footer a {
+    color:blueviolet
+}
+.current-weather strong{
+    color:red;
+}
